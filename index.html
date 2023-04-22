@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Reservation</title>
+    <link rel="icon" href="./icon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <form method="#">
+            <div class="container">
+                <h2>Online Train Reservation</h2>
+
+                <div class="name">
+                    <label>Passenger Name</label>
+                    <input type="text" placeholder="Enter your Name" maxlength="20" required>
+                </div>
+
+                <div class="age">
+                    <label>Age</label>
+                    <input type="number"placeholder="Enter your Age">
+
+                </div>
+
+                <div class="email">
+                    <label>Email id</label>
+                    <input type="email" placeholder="Enter your Email Id">
+                </div>  
+
+                <div class="mobile">
+                    <label>Mobile Number</label>
+                    <select>
+                        <!-- India -->
+                        <option>+91</option>
+                        <!-- China -->
+                        <option>+86</option> 
+                        <!-- Denmark -->
+                        <option>+45</option>
+                        <!-- Egypt -->
+                        <option>+20</option>
+                        <!-- France -->
+                        <option>+33</option>
+                    </select>
+                    <input type="number" placeholder="Enter your Mobile no.">
+                </div> 
+                
+                <div class="count">
+                    <label>Passengers count</label>
+                    <input type="number" placeholder="Enter no. of Passengers">
+                </div>
+
+                <div class="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender"value="female">
+                </div>
+
+                <div class="dest">
+                    <label>Select Departure Place</label>
+                    <select>
+                        <option>India</option>
+                        <option>China</option>
+                        <option>Denmark</option>
+                        <option>Egypt</option>
+                        <option>France</option>
+                    </select>
+
+                    <label>Select Arrival Place</label>
+                    <select>
+                        <option>India</option>
+                        <option>China</option>
+                        <option>Denmark</option>
+                        <option>Egypt</option>
+                        <option>France</option>
+                    </select>
+                </div>
+                
+                <div class="date">
+                    <label>Select Date to travel</label>
+                    <input type="date">
+                </div>
+
+                <div class="meals">
+                    <label for="Veg">Vegetarian</label>
+                    <input type="radio" name="meals" value="Veg">
+                    <label for="NonVeg">Non Vegetarian</label>
+                    <input type="radio" name="meals"value="Nonveg">
+                </div>
+                <div class="button">
+                    <button type="submit" class="submit">Submit</button>
+                    <button type="reset" class="reset">Reset</button>
+                </div>
+
+                <div class="notice">
+                    <h4>Once, we received the details. We can call you and confirm your Bookings.</h4>
+                </div>
+            </div>
+        </form>             
+    </section>
+</body>
+</html>

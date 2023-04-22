@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+*{
+    font-family: 'Poppins';
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image: url(./bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+form{
+    border: 2px solid rgb(172, 171, 99);
+    padding: 15px 15px;
+    border-radius: 15px;
+    color: white;
+    backdrop-filter: blur(12px);
+}
+.container h2{
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1.2px;
+    color: rgb(13, 70, 60);
+    margin-bottom: 20px;
+}
+.container label{
+    font-size: 1.3rem;
+    margin-right: 15px;
+}
+.container input{
+    background: transparent;
+    outline:none;
+    border:none;
+    padding: 4px 4px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 1.1rem;
+    transition: 0.5s;
+    letter-spacing: 1px;
+}
+input:not(:focus) {
+    border-bottom: 1px solid white;
+  }
+input:focus{
+    border-bottom: 1px solid rgb(61, 125, 16);
+  }
+::placeholder{
+    color:rgb(123, 116, 135);
+}
+.container select{
+    background: transparent;
+    color: white;
+    margin-right:10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 2px 2px;
+}
+.container select option{
+    color: black;
+    font-size: 1rem;
+}
+input[type='radio'] {
+    transform: scale(1.2);
+    margin-right: 8px;
+}
+.container .button{
+    text-align: center;
+}
+.button .submit{
+    padding: 4px 4px;
+    font-size: 1.1rem;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(219, 193, 193);
+    margin-right: 15px;
+}
+.button .reset{
+    padding: 4px 4px;
+    font-size: 1.1rem;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(219, 193, 193);
+    margin:10px;
+}
+.button .submit:hover,.reset:hover{
+    box-shadow:0 0 50px rgb(219, 193, 193);
+    cursor: pointer;
+    background-color: rgb(116, 132, 145);
+}
+.container .notice h4{
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+@media screen and (max-width:1150px) {
+    form .container h2{
+        font-size: 20px;
+    }
+    form .container label{
+        font-size: 15px;
+    }
+    form .container input{
+        font-size: 15px;
+    }
+    form .container .submit,
+    form .container .reset{
+        font-size: 15px;
+    }
+    form .container .notice h4{
+        font-size: 15px;
+    }
+    select{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:730px)
+{
+    form .container h2{
+        font-size: 15px;
+    }
+    form .container label{
+        font-size: 10px;
+    }
+    form .container input{
+        font-size: 10px;
+    }
+    form .container .submit,
+    form .container .reset{
+        font-size: 10px;
+    }
+    form .container .notice h4{
+        font-size: 10px;
+    }
+    select{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:540px)
+{
+    form .container h2{
+        font-size: 10px;
+    }
+    form .container label{
+        font-size: 7px;
+    }
+    form .container input{
+        font-size: 7px;
+    }
+    form .container .submit,
+    form .container .reset{
+        font-size: 7px;
+    }
+    form .container .notice h4{
+        font-size: 7px;
+    }
+    
+}
+  
+
+
